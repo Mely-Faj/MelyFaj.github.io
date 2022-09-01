@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spin-off of "Project: Event invite"</title>
+        <style>
+        
+    .button {
+  position: relative;
+  background-color: rgb(32, 145, 176);
+  border: none;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  padding: px;
+  width: 100%;
+  
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#btnyes {
+    width: 50%;
+    font-size: 20px;
+    margin:5px;
+    float:left;
+}
+#btnno {
+    width: 50%;
+    font-size: 20px;
+    margin:5px;
+    float:right;
+}
+
+
+.button:after {
+  content: "";
+  background: rgb(255, 255, 255);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        body {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Starry_Night_by_Jean-Fran%C3%A7ois_Millet.jpeg");
+            background-size:100%;
+            background-repeat:repeat;
+            
+        }
+            #h1 {
+                background-color:rgba(194, 194, 194, 0.1);
+            }
+           h1 {
+               text-align:center;
+               font-weight:bold;
+               font-family:cursive;
+               font-size:35px;
+           text-shadow:2px 2px 8px rgb(230, 25, 25);
+               margin-top:19px;
+               
+               
+           }
+           #h3 {
+               text-align:center;
+               color:rgb(255, 255, 255);
+               
+           }
+           .you-ar {
+                text-decoration-line:underline overline;
+               text-decoration-style: line;
+               text-decoration-color: rgb(0, 76, 158);
+               color:rgb(105, 128, 240);
+           }
+           
+           .e-i {
+                text-decoration-line:underline overline;
+               text-decoration-style: wavy;
+               text-decoration-color: rgb(0, 158, 150);
+               color:rgb(168, 145, 136);
+           }
+           .nvited {
+                text-decoration-line: underline overline;
+               text-decoration-style: line;
+               text-decoration-color: rgb(2, 79, 138);
+               color:rgb(255, 112, 112);
+           }
+           #h2 {
+               text-align:center;
+               color:rgb(252, 252, 252);
+               font-weight:bold;
+               font-size:50px;
+               background-color:rgba(97, 23, 97,.2);
+               margin-top:-35px;
+               text-shadow:2px 2px 8px rgb(191, 210, 255);
+           }
+           
+           
+        p {
+            color:rgb(255,255,255);
+        }
+           
+           #date-time {
+                text-align:center;
+                 margin-top:-40px;
+                 font-size:12px;
+                
+           }
+           
+           #at {
+               text-align:center;
+               margin-bottom:-15px;
+           }
+           
+           #place {
+               color: rgb(255, 255, 255);
+                text-align:center;
+                text-decoration:none;
+                background-color:rgba(250, 0, 79, .1);
+           }
+           
+           #activity {
+               color:rgb(255, 255, 255);
+               font-weight:bold;
+               margin-right:150px;
+               border:1px solid;
+               padding-left:5px;
+               background-color:rgba(140, 255, 125, .1);
+           }
+           
+           #food {
+               color:rgb(255, 255, 255);
+               font-weight:bold;
+               margin-top:-15px;
+               margin-left:295px;
+               padding-left:45px;
+               border:1px solid;
+               background-color:rgba(255, 225, 74, .1);
+           }
+           
+           #form {
+               
+               padding-left:0px;
+               padding-bottom:15px
+           }
+           
+           #name {
+               color:rgb(255, 255, 255);
+           }
+           
+           
+           form {
+               color:rgb(252, 252, 252);
+           }
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           h1 {
+               animation-name:example;
+               animation-duration:4s;
+               animation-iteration-count: infinite;
+              
+              
+           }
+           
+           
+           @keyframes example {
+   0%   {letter-spacing: -120px;}
+  25%  {letter-spacing: 10px;}
+  50%  {letter-spacing: 0px;}
+  70%  {letter-spacing: 10px;}
+  100% {letter-spacing: -120px;}
+           
+           
+        
+        </style>
+    </head>
+    <body><div class="container1">
+        
+        <div id="h1"><h1><span class="you-ar">YOU'R</span><span class="e-i">E I</span><span class="nvited">NVITED!</span></h1></div>
+        <div id="h3"><h3>TO AN EVENT OF</h3></div>
+        <h2 id="h2">STAR GAZING</h2>
+        
+        <div id="date-time"><p>SATURDAY JULY 30, 2020____________________6:30 - 10:30 PM</p></div>
+        
+        
+        <div id="at"><p>AT</p></div>
+        
+        <div id="place"><p><a id="place" href="https://www.google.com/maps/place/Khagrachari/@23.1104017,91.9746545,14z/data=!4m5!3m4!1s0x3752ef5fe3dcf379:0x4cd93e1208cbe425!8m2!3d23.1117407!4d91.9888247">GOLAMOON HILL RANGE, KHAGRACHHARI, CHITTAGONG</a></p></div></div>
+        
+        <div id="activity">
+        <p>ACTIVITIES INCLUDE:</p>
+        <ul>
+            <li>STAR GAZING</li>
+            <li>BON-FIRE GATHERING</li>
+            <li>HOT AIR BALLOON RELEASING</li>
+        </ul>
+        </div>
+        
+        <div id="food">
+    
+    <p>FOOD ITEMS:</p>
+    
+        <ul>
+            <li>BAMBOO CHICKEN</li>
+            <li>PARTHA</li>
+            
+        </ul>
+        </div>
+        
+        <form><div id="name">
+            NAME
+            </div>
+            <div id="form">
+                
+                 <form action="/action_page.php">
+    <input type="text" id="name1" name="name1" placeholder="Your name.."></form>
+                
+            </div>
+        </form>
+        <br>
+        
+        <div id="btn" onclick="myFunction()"><button class="button" id="btn">RSVP</button>
+        </div><br>
+        
+        <div id="btn"><button class="button" id="btnyes" onclick="myFunctionY()">INSHA-ALLAH, I'LL BE THERE</button>
+        <button class="button" id="btnno" onclick="myFunctionN()">I'LL JOIN YOU FROM THE ROOF-TOP</button>
+        </div>
+        
+        
+        <script>
+           function myFunction() {
+  alert("SAD TO HEAR THAT YOU WON'T EVEN JOIN US REMOTELY");
+}
+       
+          function myFunctionY() {
+  alert("TERRIFIC DISTANCE-PARTY WITH THE CELESTIAL BALLS OF FIRE!!!");
+}
+       
+          function myFunctionN() {
+  alert("WHAT ARE THE ODDS OF US STARING AT THE SAME STAR?");
+}
+            
+        </script>
+        
+        
+        
+    </body>
+</html>
