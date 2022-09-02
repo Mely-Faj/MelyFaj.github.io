@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"><!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"-->
         <title>Spin-off of "Project: Event invite"</title>
         <style>
         
@@ -11,7 +11,7 @@
   border: none;
   font-size: 28px;
   color: rgb(255, 255, 255);
-  padding: px;
+  padding: 0px;
   width: 100%;
   
   text-align: center;
@@ -19,19 +19,23 @@
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
+  margin:2px;
 }
 
 #btnyes {
     width: 50%;
+    height:55px;
     font-size: 20px;
     margin:5px;
     float:left;
+    padding:5px;
 }
 #btnno {
     width: 50%;
     font-size: 20px;
     margin:5px;
     float:right;
+    padding:5px;
 }
 
 
@@ -54,14 +58,7 @@
   opacity: 1;
   transition: 0s
 }
-        
-        
-        
-        
-        
-        
-        
-        
+
         body {
             background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Starry_Night_by_Jean-Fran%C3%A7ois_Millet.jpeg");
             background-size:100%;
@@ -88,7 +85,7 @@
            }
            .you-ar {
                 text-decoration-line:underline overline;
-               text-decoration-style: line;
+               text-decoration-style: solid;
                text-decoration-color: rgb(0, 76, 158);
                color:rgb(105, 128, 240);
            }
@@ -101,7 +98,7 @@
            }
            .nvited {
                 text-decoration-line: underline overline;
-               text-decoration-style: line;
+               text-decoration-style: solid;
                text-decoration-color: rgb(2, 79, 138);
                color:rgb(255, 112, 112);
            }
@@ -133,10 +130,14 @@
            }
            
            #place {
-               color: rgb(255, 255, 255);
-                text-align:center;
-                text-decoration:none;
+              
+              text-align:center;
                 background-color:rgba(250, 0, 79, .1);
+           }
+           #place-link {
+                color: rgb(255, 255, 255);
+                text-decoration:none;
+               
            }
            
            #activity {
@@ -173,22 +174,6 @@
                color:rgb(252, 252, 252);
            }
            
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
            h1 {
                animation-name:example;
                animation-duration:4s;
@@ -203,11 +188,10 @@
   25%  {letter-spacing: 10px;}
   50%  {letter-spacing: 0px;}
   70%  {letter-spacing: 10px;}
-  100% {letter-spacing: -120px;}
-           
-           
-        
-        </style>
+  100% {letter-spacing: -120px;} 
+  }
+      
+  </style>
     </head>
     <body><div class="container1">
         
@@ -220,7 +204,7 @@
         
         <div id="at"><p>AT</p></div>
         
-        <div id="place"><p><a id="place" href="https://www.google.com/maps/place/Khagrachari/@23.1104017,91.9746545,14z/data=!4m5!3m4!1s0x3752ef5fe3dcf379:0x4cd93e1208cbe425!8m2!3d23.1117407!4d91.9888247">GOLAMOON HILL RANGE, KHAGRACHHARI, CHITTAGONG</a></p></div></div>
+        <div id="place"><p><a id="place-link" href="https://www.google.com/maps/place/Khagrachari/@23.1104017,91.9746545,14z/data=!4m5!3m4!1s0x3752ef5fe3dcf379:0x4cd93e1208cbe425!8m2!3d23.1117407!4d91.9888247">GOLAMOON HILL RANGE, KHAGRACHHARI, CHITTAGONG</a></p></div></div>
         
         <div id="activity">
         <p>ACTIVITIES INCLUDE:</p>
@@ -242,7 +226,7 @@
         </ul>
         </div>
         
-        <form><div id="name">
+        <div id="name">
             NAME
             </div>
             <div id="form">
@@ -251,15 +235,15 @@
     <input type="text" id="name1" name="name1" placeholder="Your name.."></form>
                 
             </div>
-        </form>
+        
         <br>
         
-        <div id="btn" onclick="myFunction()"><button class="button" id="btn">RSVP</button>
-        </div><br>
+        <button class="button" id="btn" onclick="myFunction()">RSVP</button>
+        <br>
         
-        <div id="btn"><button class="button" id="btnyes" onclick="myFunctionY()">INSHA-ALLAH, I'LL BE THERE</button>
+        <button class="button" id="btnyes" onclick="myFunctionY()">INSHA-ALLAH, I'LL BE THERE</button>
         <button class="button" id="btnno" onclick="myFunctionN()">I'LL JOIN YOU FROM THE ROOF-TOP</button>
-        </div>
+        
         
         
         <script>
